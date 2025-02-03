@@ -16,12 +16,18 @@ Se olharmos pela ótica de grupo de bairros a média dos três melhores fica com
 
 b.	O número mínimo de noites e a disponibilidade ao longo do ano interferem no preço?
 
-
-
-
+Quando olhamos através da média, não é possivel identificar alguma relação no preço quando aplicamos os dois parametros, porém, quando avaliamos pelos maiores valores, conseguimos identificar que os maiores alugueis como pratica usam poucos dias como minimo de noites, provavelmente pelo elevado preço.
 
 c.	Existe algum padrão no texto do nome do local para lugares de mais alto valor?
+
+Eles mostram a localização e vista no nome, para evidenciar os diferenciais deles.
+
 4.	Explique como você faria a previsão do preço a partir dos dados. Quais variáveis e/ou suas transformações você utilizou e por quê? Qual tipo de problema estamos resolvendo (regressão, classificação)? Qual modelo melhor se aproxima dos dados e quais seus prós e contras? Qual medida de performance do modelo foi escolhida e por quê?
+
+A previsão de preço seria de uma média de 302 Dolares, fiz uma analise filtrando o bairro e filtrando pelo room_type e tirei uma média. Estamos resolvendo por regressão, uma vez que queremos encontrar um valor.
+
+Fiz um modelo analisando as intermediações, você acaba analisando bem quanto vale em média apartamentos a sua volta, porém existiriam outras analises que deveriam ser feitas, como metragem, localização com base em rua, acessos e afins dentro do bairro e analise de interior, portanto a chance do valor estar longe do real, pode ser bem grande.
+
 5.	Supondo um apartamento com as seguintes características:
 
 {'id': 2595,
@@ -41,6 +47,9 @@ c.	Existe algum padrão no texto do nome do local para lugares de mais alto valo
  'disponibilidade_365': 355}
 
 Qual seria a sua sugestão de preço?
+
+A previsão de preço seria de uma média de 302 Dolares, fiz uma analise filtrando o bairro e filtrando pelo room_type e tirei uma média.
+
 5.	Salve o modelo desenvolvido no formato .pkl. 
 6.	A entrega deve ser feita através de um repositório de código público que contenha:
 a.	README explicando como instalar e executar o projeto
