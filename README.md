@@ -3,20 +3,40 @@ Respondendo as questões da Lighthouse
 
 
 1.	Faça uma análise exploratória dos dados (EDA), demonstrando as principais características entre as variáveis e apresentando algumas hipóteses de negócio relacionadas. Seja criativo!
+
+
 2.	Responda também às seguintes perguntas:
 a.	Supondo que uma pessoa esteja pensando em investir em um apartamento para alugar na plataforma, onde seria mais indicada a compra?
 
-Utilizando o pensamento de agrupamento, e desconsiderando o valor de investimento para com o imóvel, podemos chegar a resposta em três óticas:
+Utilizando o conceito de agrupamento, cheguei em duas possibilidades:
 
-Se não fizermos nenhum agrupamento, olhando apartamento por apartamento, temos que os dois melhores empatados são Luxury 1 Bedroom Apt em Greenpoint do brooklyn e furnished room in astoria apartment em Astoria no Queens ambos rendendo 3,65 Milhões de Dolares, e em terceiro lugar o Spanish Harlem Apt no East Harlem em Manhattan rendendo 3.649.635,00 de dolares.
+RECOMENDAÇÃO PARA INVESTIMENTO 1:
+Bairros com maior potencial de investimento:
+                     price       numero_de_reviews
+                      mean count              mean
+bairro                                            
+Fort Wadsworth  800.000000     1          0.000000
+Woodrow         700.000000     1          0.000000
+Tribeca         490.638418   177         11.491525
+Sea Gate        487.857143     7          1.428571
+Riverdale       442.090909    11         26.636364
 
-Quando agrupamos por bairros temos Woodrow - Staten Island que arrecada em média aproximadamente 255 mil dolares, Prince,s Bay - Staten Island que na média está com 130 mil dolares e Sea Gate - Brooklyn que arrecada aproximadamente 119 mil Dolares na média
+RECOMENDAÇÃO PARA INVESTIMENTO 2:
+Grupo de bairros com maior potencial de investimento:
+                    price        numero_de_reviews
+                     mean  count              mean
+bairro_group                                      
+Manhattan      196.875814  21661         20.985596
+Brooklyn       124.381983  20103         24.203601
+Staten Island  114.812332    373         30.941019
+Queens          99.517649   5666         27.700318
+Bronx           87.496792   1091         26.004583
 
-Se olharmos pela ótica de grupo de bairros a média dos três melhores fica com Manhattan no valor de 45.205,92, Brooklyn no valor de 31.489,22 e Queens no valor de 21.083,26.
+Consideraria na recomendação 1, não utilizar o bairro Fort Wadsworth ou Woodrow, pois ambos tem apenas 1 imóvel, podendo tornar a contagem unilateral.
 
 b.	O número mínimo de noites e a disponibilidade ao longo do ano interferem no preço?
 
-Quando olhamos através da média, não é possivel identificar alguma relação no preço quando aplicamos os dois parametros, porém, quando avaliamos pelos maiores valores, conseguimos identificar que os maiores alugueis como pratica usam poucos dias como minimo de noites, provavelmente pelo elevado preço.
+Quando olhamos através de regressão linear e média, não é possivel identificar alguma relação no preço quando aplicamos os dois parametros, porém, quando avaliamos pelos maiores valores, conseguimos identificar que os maiores alugueis como pratica usam poucos dias como minimo de noites, provavelmente pelo elevado preço.
 
 c.	Existe algum padrão no texto do nome do local para lugares de mais alto valor?
 
